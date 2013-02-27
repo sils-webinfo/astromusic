@@ -2,6 +2,11 @@
   <head>
     <title> ASTRO Music Library </title>
     <style type="text/css">
+        h2.categories
+        {
+            color:red;
+            text-align:left;
+        }
         body {
             background-color: #d2b48c;
             margin-left: 20%;
@@ -16,13 +21,19 @@
   <body>
     <h1> Welcome to Astro Music Library</h1>
     <img src="IMG_3446.JPG" height="100" width="150"/>
-    <h2>Choose from the following categories</h2>
-          <li> <a href="./am_genre.html">Genre</a> </li>
-          <li> <a href="./am_artist.html">Artist</a> </li>
-          <li> <a href="./am_album.html">Album</a> </li>
-    <p>
-        You will find us right in the center of downtown webville
-    </p>
+
+    <h2 class=categories>Click to navigate </h2>
+
+    <div id="queries">
+      <ul>
+        <li><a rel="albums-all" href="./am_albums.html" title="List of All Albums">Albums</a> </li>
+        <li><a rel="artists-all" href="./am_artists.html" title="List of All Artists">Artists</a> </li>
+        <li><a rel="genre-all" href="./am_genre.html" title="List of All Genre">Genre</a> </li>
+        </br>
+        <li><a rel="playlist-all" href="./am_create_playlist.html" title="Make a playlist">Make a Playlist</a> </li>
+
+      </ul>
+    </div>
   </body>
 </html>
   
