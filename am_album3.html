@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title> ASTRO Music Library </title>
+    <style type="text/css">
+        h2.categories
+        {
+            color:red;
+            text-align:left;
+        }
+        h3.Songs_List
+        {
+            color:red;
+            text-align:left;
+        }
+        body {
+            background-color: #d2b48c;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 1px dotted gray;;
+            padding: 10px 10px 10px 10px
+            font-family: sans-serif;
+            color:Green
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1> Welcome to Astro Music Library</h1>
+    <img src="IMG_3446.JPG" height="100" width="150"/>
+
+    <h2 class="Album3 by Artist12: Genre:Folk, Country"> Album3 by Artist12</h2>
+    <!--<img src="doumbek.jpg" height="100" width="150"/>-->
+    <br/>
+    <div id="albums">
+      <ul class="single-album">
+          <img class="album_image" src="doumbek.jpg" height="100" width="150"/>
+        <li>
+          <span class="Album-name">Album3</span>
+
+          <!--Used album1's description on purpose-->
+          <a rel="album" href="./am_album1_details.html" title="Description of Album-3">Description</a>
+        </li>
+        <li>
+          <span class="Artist_discription">Artist12</span>
+          <a rel="album" href="./am_artist12.html" title="Description of Album-3">Description</a>
+        </li>
+        <p> Genre: Folk, Country </p> 
+          
+      </ul>
+    </div>
+
+    <h3 class="Songs_List">Songs List</h3>
+    <form action="./am_playlist.html" method="POST">
+      <input type="checkbox" name="song" value="Song1">Song1:Composer:C1<br>
+      <input type="checkbox" name="Song" value="Song2">Song2:Composer:C1<br>
+      <input type="checkbox" name="Song" value="Song3">Song3:Composer:C2<br>
+      <input type="checkbox" name="Song" value="Song4">Song4:Composer:C5<br>
+      <input type="text" name="Playlist" value="" />Playlist <br/>
+      <input type="submit" value="Submit"> 
+    </form> 
+
+  </body>
+</html>
+  
