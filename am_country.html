@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title> ASTRO Music Library </title>
+    <style type="text/css">
+        h1.welcome
+        {
+            color:purple;
+            text-align:left;
+        }
+        h2.Albums
+        {
+            color:red;
+            text-align:left;
+        }
+        h3.heading3
+        {
+            color:green;
+            text-align:left;
+        }
+        body {
+            background-color: #d2b48c;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 1px dotted gray;;
+            padding: 10px 10px 10px 10px
+            font-family: sans-serif;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="welcome"> Welcome to Astro Music Library</h1>
+    <img src="IMG_3446.JPG" height="100" width="150"/>
+
+    <h2 class="Albums">Country Music Album Selection</h2>
+    <h3 class="heading3">Explore Albums</h3>
+
+    <div id="albums">
+      <ul class="all">
+        <li>
+          <span class="Album-name">Album5</span>
+          <a rel="album" href="./am_album5.html" title="Description of Album-5">Description</a>
+          <a rel="artist" href="./am_artist13.html" title="Description of Artist-13">Artist</a>
+        </li>
+        <li>
+          <span class="Album-name">Album7</span>
+          <a rel="album" href="./am_album7.html" title="Description of Album-7">Description</a>
+          <a rel="artist" href="./am_artist14.html" title="Description of Artist-14">Artist</a>
+        </li>
+        <li>
+          <span class="Album-name">Album3</span>
+          <a rel="album" href="./am_album3.html" title="Description of Album-3">Description</a>
+          <a rel="artist" href="./am_artist14.html" title="Description of Artist-12">Artist</a>
+        </li>
+     </ul>
+    </div>
+
+    <h3 class="heading3">Select Albums</h3>
+    <form action="./am_playlist.html" method="GET">
+      <input type="checkbox" name="Album5" value="Album5">Album5: Artist:Artist13<br>
+      <input type="checkbox" name="Album7" value="Album7">Album7: Artist:Artist14<br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>
+        
+    </p>
+  </body>
+</html>
+  
