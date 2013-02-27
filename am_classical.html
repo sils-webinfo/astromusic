@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title> ASTRO Music Library </title>
+    <style type="text/css">
+        h2.Albums
+        {
+            color:red;
+            text-align:left;
+        }
+        h3.heading3
+        {
+            color:green;
+            text-align:left;
+        }
+        body {
+            background-color: #d2b48c;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 1px dotted gray;;
+            padding: 10px 10px 10px 10px
+            font-family: sans-serif;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1> Welcome to Astro Music Library</h1>
+    <img src="IMG_3446.JPG" height="100" width="150"/>
+
+    <h2 class="Albums">Classical Music Album Selection</h2>
+    <h3 class="heading3">Explore Albums</h3>
+
+    <div id="albums">
+      <ul class="all">
+        <li>
+          <span class="Album-name">Album1</span>
+          <a rel="album" href="./am_album1.html" title="Description of Album-1">Description</a>
+          <a rel="artist" href="./am_artist11.html" title="Description of Artist-11">Artist</a>
+        </li>
+        <li>
+          <span class="Album-name">Album2</span>
+          <a rel="album" href="./am_album2.html" title="Description of Album-2">Description</a>
+          <a rel="artist" href="./am_artist11.html" title="Description of Artist-11">Artist</a>
+        </li>
+        <li>
+          <span class="Album-name">Album8</span>
+          <a rel="album" href="./am_album8.html" title="Description of Album-8">Description</a>
+          <a rel="artist" href="./am_artist14.html" title="Description of Artist-14">Artist</a>
+        </li>
+     </ul>
+    </div>
+    <h3 class="heading3">Select Albums</h3>
+
+    <form action="./am_playlist.html" method="GET">
+      <input type="checkbox" name="Album1" value="Album1">Album1: Artist:Artist11<br>
+      <input type="checkbox" name="Album2" value="Album2">Album2: Artist:Artist11<br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>
+        
+    </p>
+  </body>
+</html>
+  
