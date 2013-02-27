@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title> ASTRO Music Library </title>
+    <style type="text/css">
+        h2.Album-name
+        {
+            color:red;
+            text-align:left;
+            font-family: sans-serif;
+        }
+        h3.heading3
+        {
+            color:green;
+            text-align:left;
+            font-family: sans-serif;
+        }
+        body {
+            background-color: #d2b48c;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 1px dotted gray;;
+            padding: 10px 10px 10px 10px
+            font-family: sans-serif;
+        }
+
+    </style>
+  </head>
+<body>
+    <h1> Welcome to Astro Music Library</h1>
+    <img src="IMG_3446.JPG" height="100" width="150"/>
+    <h2 class="Album-name">Albums by Artist Artist13 </h2>
+    <div id="albums">
+      <ul class="all">
+        <li>
+          <span class="Album-name">Album5</span>
+          <a rel="album" href="./am_album5.html" title="Description of Album-5">Description</a>
+          <a rel="artist" href="./am_artist13.html" title="Description of Artist-13">Artist</a>
+        </li>
+        <li>
+          <span class="Album-name">Album6</span>
+          <a rel="album" href="./am_album6.html" title="Description of Album-6">Description</a>
+          <a rel="artist" href="./am_artist13.html" title="Description of Artist-13">Artist</a>
+        </li>
+
+    <h3 class="heading3">Select Albums</h3>
+
+    <form action="./am_playlist.html" method="GET">
+      <input type="checkbox" name="Album5" value="Album5">Album5: Artist:Artist13<br>
+      <input type="checkbox" name="Album6" value="Album6">Album6: Artist:Artist13<br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
+
